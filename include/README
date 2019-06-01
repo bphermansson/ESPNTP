@@ -1,0 +1,12 @@
+ESPNTP
+
+This is a simple code for ESP8266-based devices with Arduino Core. The purpose is to show how to use the
+Arduino Esp-librarys built in NTP-function the get the current time from the internet.
+Most projects that gets correct time from the internet uses an external library, but
+that's not necessary. The project is written in Atom/PlatformIO but should be possible to use in other
+IDE:s like the Arduino IDE.
+We have three source files. "connect.cpp" has the code to connect to WiFi. It uses settings found in
+"settings.h". This makes it possible to publish the code but exclude the secret WiFi password.
+"ntp.c" includes the functions to configure and use a NTP-server.
+Finally there is "main.cpp" with the code to set everything up, call the relevant functions and
+print out the correct time to the serial port.
